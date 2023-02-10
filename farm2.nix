@@ -8,6 +8,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./common.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -36,9 +37,6 @@
 
   # Enable the X11 windowing system.
   # services.xserver.enable = true;
-
-
-  
 
   # Configure keymap in X11
   # services.xserver.layout = "us";
@@ -69,10 +67,10 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  # environment.systemPackages = with pkgs; [
+  environment.systemPackages = with pkgs; [
   #   vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #   wget
-  # ];
+  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.

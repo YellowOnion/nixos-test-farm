@@ -1,7 +1,7 @@
 { lib, config, pkgs, ... }:
 let
   kentSshKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICzXYZ0uwhhyOeHSBHSGQF+Y++qyoLEuyWnmF3/BJ5jp kent";
-  danielSShkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPqloVs3g8afwA4R3VBV8d6QSkzdRqZbvPh5NdEn60a7 KeyPass Auth";
+  danielSshKey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPqloVs3g8afwA4R3VBV8d6QSkzdRqZbvPh5NdEn60a7 KeyPass Auth";
 in
 {
   # Use the systemd-boot EFI boot loader.
